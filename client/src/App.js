@@ -1,9 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import Map from './components/Map';
 
 function App() {
   return (
-    <h1>Yelpington</h1>
+    <div>
+      <h1>Yelpington: Burlington Restaurants</h1>
+      <Map />
+    </div>
   );
 }
 
