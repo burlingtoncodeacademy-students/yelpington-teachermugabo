@@ -1,0 +1,11 @@
+{
+  "id": "pizza44",
+  "name": "Pizza 44",
+  "address": "703 Pine St",
+  "latlong": [44, -70],
+  "phone number": "540-0441",
+  "hours": "11:30-8p every day, more or less",
+  "notes": [
+    "The Pizza is good, but lately I've noticed a considerable decrease in the density of the topings."
+  ]
+}
