@@ -18,28 +18,28 @@ const Map = () => {
 
   // populate restaurants
   useEffect(() => {
+    // ? where do the 'awaits' go?
     const fetchRestaus = async () => {
       fetch('/api/')
         .then((r) => r.json())
         .then((ids) => {
           // get restaurants
-          const restausTemp = await ids.map((id) =>
+          const restausTemp = ids.map((id) =>
             fetch(`/api/${id}`)
               .then((r) => r.json())
-              .then((data) => data)
+              .then((data) => {
+                return data;
+              })
           );
 
           // save restaurants to state
           console.log('restaus @ line25', restausTemp);
           setRestau(restausTemp);
+          console.log(restaus);
         });
     };
     fetchRestaus();
   }, []);
-
-  const printRestaus = () => {
-    console.log(restaus);
-  };
 
   return (
     <div id='map-container'>
@@ -58,7 +58,7 @@ const Map = () => {
         it's information, get its latlong and create a marker for it on the map
         :-) */}
       </MapContainer>
-      <p>{restaus}</p>
+      {/* <p>{restaus}</p> */}
     </div>
   );
 };
