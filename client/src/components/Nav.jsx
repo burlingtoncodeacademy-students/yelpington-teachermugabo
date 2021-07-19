@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+
+// TODO pass in setRestau to pass to pass 'clicked' restau object -- didn't work. why?
 const Nav = ({ restaus }) => {
   return (
     <nav>
@@ -5,7 +8,13 @@ const Nav = ({ restaus }) => {
         Home
       </a>
       {restaus.map((restau) => (
-        <a href={`/restaurant/${restau.id}`}>{restau.name}</a>
+        <Link
+          key={restau.id}
+          to={`/restaurant/${restau.id}`}
+          // onClick={setRestau(restau)}
+        >
+          {restau.name}
+        </Link>
       ))}
     </nav>
   );
