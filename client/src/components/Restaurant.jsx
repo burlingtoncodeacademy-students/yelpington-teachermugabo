@@ -14,7 +14,8 @@ const Restaurant = (restau) => {
           </ul>
         </p>
       </section>
-      {/* auto-wrap restau into an array & call map   */}
+      {/* auto-wrap restau into an array & call map
+      source: https://stackoverflow.com/questions/39751069/how-to-safely-wrap-an-object-into-an-array-in-javascript */}
       <Map center={restau.latlong} restaus={[].concat(restau)} />
     </div>
   );
