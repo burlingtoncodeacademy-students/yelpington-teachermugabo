@@ -2,6 +2,7 @@
  * https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_gray
 */
 
+/* basic horizontal flex  nav  */
 nav {
   display: flex;
   flex-direction: row;
@@ -11,6 +12,7 @@ nav {
   background-color: #f3f3f3;
 }
 
+/* make a blocks so padding can be set for styling */
 nav > a {
   text-decoration: none;
   display: block;
@@ -19,11 +21,22 @@ nav > a {
   padding: 14px 16px;
 }
 
+/* hover effect on none-current pages  */
 nav > a:hover:not(.active) {
   background-color: #ddd;
 }
 
+/* current page indicator */
 nav > a.active {
   color: white;
   background-color: #04aa6d;
+}
+
+/* make nav vertical below 650px */
+@media screen and (max-width: 650px) {
+  nav {
+    flex-direction: column;
+    float: left;
+    width: 30vw;
+  }
 }
