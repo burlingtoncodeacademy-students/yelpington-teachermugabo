@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Map from './components/Map';
+import Nav from './components/Nav';
 import './App.css';
 
 function App() {
@@ -39,14 +40,7 @@ function App() {
   return (
     <div className='App'>
       <h1>Yelpington!</h1>
-      <nav>
-        <a href={'/'} className='active'>
-          Home
-        </a>
-        {restaus.map((restau) => (
-          <a href={`/restaurant/${restau.id}`}>{restau.name}</a>
-        ))}
-      </nav>
+      <Nav restaus={restaus} />
       <Map center={center} restaus={restaus} />
     </div>
   );
