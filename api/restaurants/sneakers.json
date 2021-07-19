@@ -1,8 +1,8 @@
 {
   "id": "sneakers",
-  "name": "Sneaker's Bistro",
+  "name": "Sneakers Bistro",
   "address": "28 Main St, Winooski",
-  "latlong": [44, -70],
+  "latlong": [44.49042715, -73.1867343249734],
   "phone number": "655-9081",
   "hours": "8-2p Thu-Mon",
   "notes": [

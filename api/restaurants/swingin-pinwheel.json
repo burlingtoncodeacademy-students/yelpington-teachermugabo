@@ -1,8 +1,8 @@
 {
   "id": "swingin-pinwheel",
-  "name": "Swingin' Pinwheel",
+  "name": "The Swingin' Pinwheel",
   "address": "11 Center st",
-  "latlong": [44, -70],
+  "latlong": [44.4778679, -73.2116639],
   "phone number": "448-3961",
   "hours": "closed permanently",
   "notes": ["Every Thursday is meatloaf day."]
