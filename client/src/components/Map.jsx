@@ -13,6 +13,7 @@ let DefaultIcon = L.icon({
 const Map = ({ center, restaus }) => {
   return (
     <div id='map-container'>
+      {/* TODO the map isn't centering...why? */}
       <MapContainer center={center} zoom={13} style={{ height: '60vh' }}>
         {/* select map tile + attribution  */}
         <TileLayer
