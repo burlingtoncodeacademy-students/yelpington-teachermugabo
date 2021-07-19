@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 import Map from './components/Map';
+import Header from './components/Header';
 import Nav from './components/Nav';
 import './App.css';
 
@@ -38,11 +41,11 @@ function App() {
   }, []);
 
   return (
-    <div className='App'>
-      <h1>Yelpington!</h1>
+    <BrowserRouter>
+      <Header />
       <Nav restaus={restaus} />
       <Map center={center} restaus={restaus} />
-    </div>
+    </BrowserRouter>
   );
 }
 
