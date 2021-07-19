@@ -1,0 +1,29 @@
+/* CSS inspired by W3School's navbar tutorial 
+ * https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_gray
+*/
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+nav > a {
+  text-decoration: none;
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+nav > a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+nav > a.active {
+  color: white;
+  background-color: #04aa6d;
+}
