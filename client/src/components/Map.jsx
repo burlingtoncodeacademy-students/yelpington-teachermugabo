@@ -10,11 +10,11 @@ let DefaultIcon = L.icon({
   shadowUrl: iconShadow,
 });
 
-const Map = ({ center, restaus }) => {
+const Map = ({ center, restaus, zoom }) => {
   return (
     <div id='map-container'>
       {/* TODO the map isn't centering...why? */}
-      <MapContainer center={center} zoom={13} style={{ height: '60vh' }}>
+      <MapContainer center={center} zoom={zoom} style={{ height: '60vh' }}>
         {/* select map tile + attribution  */}
         <TileLayer
           url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'

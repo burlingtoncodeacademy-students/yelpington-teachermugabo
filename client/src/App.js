@@ -66,7 +66,9 @@ function App() {
         <Route
           exact
           path='/'
-          render={({ match }) => <Map center={center} restaus={restaus} />}
+          render={({ match }) => (
+            <Map center={center} restaus={restaus} zoom={13} />
+          )}
         />
         <Route
           path='/restaurant/:restaurantId'
