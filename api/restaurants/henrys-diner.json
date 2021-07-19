@@ -1,0 +1,12 @@
+{
+  "id": "henrys-diner",
+  "name": "Henry's Diner",
+  "address": "155 Bank St",
+  "latlong": [44.47809657873547, -73.21348650653393],
+  "phone number": "(802) 862-9010",
+  "hours": "6:00 am - 2:00 pm",
+  "notes": [
+    "Super friendly staff, old school diner vibe and delicious food",
+    "Every Thursday is meatloaf day."
+  ]
+}

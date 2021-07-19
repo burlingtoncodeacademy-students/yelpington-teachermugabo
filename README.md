@@ -8,19 +8,19 @@ In this project, you will create an online directory of restaurants in Burlingto
 
 # Tech
 
-* ExpressJS
-* JSON
-* AJAX
-* Leaflet Maps
+- ExpressJS
+- JSON
+- AJAX
+- Leaflet Maps
 
 ## Goals
 
 learn how to...
 
-* serve JSON files from a server
-* load JSON files into a JavaScript app
-* parse JSON files, and display data on a web page.
-* display, and manipulate embedded maps on a web page
+- serve JSON files from a server (wk6/json-server)
+- load JSON files into a JavaScript app (wk6/express-server, /bug-hunts/week-6)
+- parse JSON files, and display data on a web page. (/bug-hunts/week-6)
+- display, and manipulate embedded maps on a web page (wk4/labs/leafletjs)
 
 ## Design
 
@@ -54,14 +54,14 @@ This endpoint should also hold a directory of restaurant IDs formatted like so:
 ]
 ```
 
-**Note** that we are defining our own *id* format; its rules are:
+**Note** that we are defining our own _id_ format; its rules are:
 
-* contents are the same as the base file name, except:
-* all lowercase
-* no spaces or symbols
-* kebab-case
+- contents are the same as the base file name, except:
+- all lowercase
+- no spaces or symbols
+- kebab-case
 
-This *id* is **not** the same as an HTML element id; instead, it's a *primary key* for our
+This _id_ is **not** the same as an HTML element id; instead, it's a _primary key_ for our
 database. (Yes, in this context, the API is a database.) Every record (restaurant)
 needs a unique identifier.
 
@@ -78,6 +78,7 @@ Create a simple Express server so that:
 **When** the user visits the homepage (http://localhost:8080)
 
 **Then** An HTML file should be served which displays the title:
+
 <h1>Yelpington!</h1>
 
 <!--/BOX-->
@@ -128,7 +129,7 @@ Create a simple Express server so that:
 
 **Given** the user is on the homepage
 
-**When** they click on a pin *or* the restaurant's name in the nav bar
+**When** they click on a pin _or_ the restaurant's name in the nav bar
 
 **Then** the user should be redirected to a dedicated restaurant page.
 
@@ -144,13 +145,14 @@ Create a simple Express server so that:
 
 **Then** they should see all the information for that restaurant formatted and styled nicely
 
->Note: Use AJAX/Fetch to load the data.
+> Note: Use AJAX/Fetch to load the data.
 
 <!--/BOX-->
 
 <!--BOX-->
 
-**Hint:** To access *the current page's path* -- to get from `http://localhost:8080/restaurant#joes-diner` to `joes-diner` -- review the [URLs and JavaScript](/lessons/client-side-coding/urls_and_javascript) lesson.
+**Hint:** To access _the current page's path_ -- to get from `http://localhost:8080/restaurant#joes-diner` to `joes-diner` -- review the [URLs and JavaScript](/lessons/client-side-coding/urls_and_javascript) lesson.
+
 <details>
 <summary>
 Click here for a more detailed hint
@@ -161,6 +163,7 @@ let name = document.location.hash.slice(1)
 ```
 
 (`slice(1)` removes the `#` from the `hash` field of the `document.location` URL object.)
+
 </details>
 
 <!--/BOX-->
@@ -175,7 +178,7 @@ let name = document.location.hash.slice(1)
 
 **Then** they see a [Leaflet web map](/lessons/client_side_coding/interactive_mapping), centered at that restaurant's location
 
-> You must decide *how* and *when* to look up the restaurant's `Latitude/Longitude`, and whether to do it automatically or manually.
+> You must decide _how_ and _when_ to look up the restaurant's `Latitude/Longitude`, and whether to do it automatically or manually.
 
 > [Nominatim](https://nominatim.openstreetmap.org/) is a good option. Try the following:
 
@@ -193,8 +196,8 @@ let name = document.location.hash.slice(1)
 
 ## IceBox
 
-* Create a contact form to submit user comments to the restaurant page which will then be displayed on that page.
+- Create a contact form to submit user comments to the restaurant page which will then be displayed on that page.
 
-* Use a database or local storage to get the comments to persist across sessions.
+- Use a database or local storage to get the comments to persist across sessions.
 
 <!--/BOX-->
